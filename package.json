@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cd ./configs && webpack-dev-server",
+    "test": "cd ./configs && jest --config=jest.config.json"
   },
   "keywords": [],
   "author": "",
@@ -18,11 +18,14 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-jest": "^22.1.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.24.1",
-    "mobx-react-devtools": "^4.2.15"
+    "jest": "^22.1.2",
+    "mobx-react-devtools": "^4.2.15",
+    "react-test-render": "^1.1.1"
   }
 }
